@@ -41,38 +41,3 @@ python resume_generator.py --font-size 20 --font-color "#000000" --background-co
 
 ### Output
 The script will generate a PDF file named `custom_resume.pdf` in the same directory as the script.
-
-## Features
-
-- **Customizable Design:**
-  - Adjust font size to control the appearance of text.
-  - Choose font and background colors using hex codes.
-- **Predefined Sections:**
-  - Name
-  - Contact Information
-  - Education
-  - Technical Skills
-  - Experience
-  - Projects
-
-## Code Structure
-
-### Core Components
-
-1. **`ResumePDF` Class:**
-   - Handles PDF generation and layout.
-   - Includes methods for adding sections, headings, bullet points, and customization options.
-
-2. **`parse_args()` Function:**
-   - Parses command-line arguments for customization.
-
-3. **`generate_resume()` Function:**
-   - Creates the PDF and saves it as `custom_resume.pdf`.
-
-### Key Methods
-
-- `header()`: Adds the resume's header, including the name and background color.
-- `body()`: Adds the main content, including various sections.
-- `add_bullet_points(points)`: Adds bullet points under a section.
-- `underline_heading(title)`: Adds a heading with an underline.
-- `hex_to_rgb(hex_color)`: Converts a hex color code to an RGB tuple.
